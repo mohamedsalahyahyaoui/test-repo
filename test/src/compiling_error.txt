@@ -1,0 +1,32 @@
+/home/bigbear/racem/test/src/thread.c: In function ‘myThreadFun’:
+/home/bigbear/racem/test/src/thread.c:7:5: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+     sleep(15);
+     ^
+/home/bigbear/racem/test/src/thread.c:8:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+     printf("Printing GeeksQuiz from Thread \n");
+     ^
+/home/bigbear/racem/test/src/thread.c:8:5: warning: incompatible implicit declaration of built-in function ‘printf’
+/home/bigbear/racem/test/src/thread.c:8:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/bigbear/racem/test/src/thread.c: In function ‘main’:
+/home/bigbear/racem/test/src/thread.c:16:5: error: unknown type name ‘pthread_t’
+     pthread_t tid;
+     ^
+/home/bigbear/racem/test/src/thread.c:17:5: warning: incompatible implicit declaration of built-in function ‘printf’
+     printf("Before Thread\n");
+     ^
+/home/bigbear/racem/test/src/thread.c:17:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+/home/bigbear/racem/test/src/thread.c:18:5: warning: implicit declaration of function ‘pthread_create’ [-Wimplicit-function-declaration]
+     pthread_create(&tid, NULL, myThreadFun, NULL);
+     ^
+/home/bigbear/racem/test/src/thread.c:18:26: error: ‘NULL’ undeclared (first use in this function)
+     pthread_create(&tid, NULL, myThreadFun, NULL);
+                          ^
+/home/bigbear/racem/test/src/thread.c:18:26: note: each undeclared identifier is reported only once for each function it appears in
+/home/bigbear/racem/test/src/thread.c:19:5: warning: implicit declaration of function ‘pthread_join’ [-Wimplicit-function-declaration]
+     pthread_join(tid, NULL);
+     ^
+/home/bigbear/racem/test/src/thread.c:21:5: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+     exit(0);
+     ^
+/home/bigbear/racem/test/src/thread.c:21:5: warning: incompatible implicit declaration of built-in function ‘exit’
+/home/bigbear/racem/test/src/thread.c:21:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
